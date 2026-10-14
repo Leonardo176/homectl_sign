@@ -1,0 +1,11 @@
+[package]
+name = "homectl_sign"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+arg = {version = "0.4.6", features = ["std"]}
+base64 = "0.23.1"
+ed25519-dalek = {version = "3.0.0", features = ["pkcs8", "pem"]}
+serde_json = {version = "1.0.154", features = ["preserve_order"]}
